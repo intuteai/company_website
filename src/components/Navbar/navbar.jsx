@@ -23,7 +23,8 @@ const Navbar = () => {
   return (
     <nav className={`navbar navbar-expand-lg sticky-top ${navbarClass}`}>
       <div className="container">
-        <Link className="navbar-brand" to="/">Intute.ai</Link>
+        <img src="/assets/intuteLogo.png" alt="" />
+        {/* <Link className="navbar-brand" to="/">Intute.ai</Link> */}
         <button 
           className="navbar-toggler" 
           type="button" 

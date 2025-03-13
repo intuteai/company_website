@@ -1,116 +1,111 @@
 .about-container {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #121212, #1a1a1a);
     color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(135deg, #121212, #1a1a1a);
+    padding: 80px 80px;
   }
   
-  .about-title {
-    font-size: 3rem;
-    font-weight: bold;
-    background: linear-gradient(to right, #f3ec78, #af4261);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 20px;
-  }
-  
-  .about-text {
-    font-size: 1.2rem;
-    max-width: 800px;
-    line-height: 1.6;
-    text-align: center;
-    color: #ddd;
-    padding: 0 15px;
-    opacity: 0.9;
-  }
-  
-  /* Who We Are Section */
-  .who-we-are {
-    margin-top: 40px;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    max-width: 800px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-  }
-  
-  .who-we-are h3 {
-    font-size: 2rem;
+.who-we-are {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.who-we-are-title {
     color: #f3ec78;
-    margin-bottom: 10px;
-  }
-  
-  .who-we-are p {
-    font-size: 1.1rem;
-    color: #ddd;
-    line-height: 1.6;
-  }
-  
-  /* Core Strengths Section */
-  .core-strengths {
-    margin-top: 50px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 50px 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-  }
-  
+    font-size: large;
+}
+  /* Core Title */
   .core-title {
+    text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
     color: #f3ec78;
     margin-bottom: 30px;
   }
   
-  /* Strengths Grid */
-  .strengths-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  
-  /* Individual Strength Card */
+  /* Strength Card - Horizontal Layout */
   .strength-card {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 25px;
-    border-radius: 12px;
-    max-width: 320px;
-    width: 100%;
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 1000px;
+    overflow: hidden;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease;
   }
   
-  .strength-card h3 {
-    font-size: 1.8rem;
-    color: #79b8f3;
-    margin-bottom: 15px;
+  .strength-card:hover {
+    transform: scale(1.02);
   }
   
-  .strength-card ul {
+  /* Reverse layout for alternating cards */
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Image Section */
+  .strength-image {
+    width: 50%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .strength-image h3 {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Text Section */
+  .strength-text {
+    width: 50%;
+    padding: 30px;
+    text-align: left;
+  }
+  
+  .strength-text ul {
     list-style: none;
     padding: 0;
   }
   
-  .strength-card li {
-    font-size: 1.1rem;
+  .strength-text li {
+    font-size: 1.2rem;
     color: #ddd;
-    line-height: 1.6;
+    margin: 10px 0;
   }
   
   /* Responsive */
   @media (max-width: 768px) {
-    .strengths-grid {
+    .strength-card {
       flex-direction: column;
-      align-items: center;
+    }
+  
+    .reverse {
+      flex-direction: column;
+    }
+  
+    .strength-image,
+    .strength-text {
+      width: 100%;
+    }
+  
+    .strength-image h3 {
+      font-size: 2rem;
     }
   }
   

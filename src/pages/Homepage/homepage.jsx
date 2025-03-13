@@ -1,18 +1,29 @@
 import "./homepage.css";
 import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
   return (
     <div className="home-container">
+      {/* Typewriter Effect for Title */}
       <motion.h2 
         className="home-title"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        Welcome to Intute.ai
+        <Typewriter
+          words={["Welcome to Intute.ai", "Empowering AI Innovations", "Shaping a Sustainable Future"]}
+          loop={true}
+          cursor
+          cursorStyle="|"
+          typeSpeed={90}
+          deleteSpeed={30}
+          delaySpeed={1500}
+        />
       </motion.h2>
 
+      {/* Subtitle */}
       <motion.p 
         className="home-text"
         initial={{ opacity: 0, x: -50 }}
@@ -23,6 +34,7 @@ const Home = () => {
         Revolutionizing industries with advanced technologies for a sustainable future.
       </motion.p>
 
+      {/* Button with Hover Effect */}
       <motion.button
         className="connect-btn"
         whileHover={{ scale: 1.1 }}
