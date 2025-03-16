@@ -1,12 +1,17 @@
 .about-container {
     color: white;
     background: linear-gradient(135deg, #121212, #1a1a1a);
-    padding: 80px 80px;
+    padding: 40px 80px;
   }
   
 .who-we-are {
+    border-radius: 20px;
+    background-color: rgb(65, 64, 64);
+    padding-top: 35px;
+    padding-bottom: 25px;
     padding-right: 100px;
     padding-left: 100px;
+    margin-bottom: 40px;
 }
 
 .who-we-are-title {

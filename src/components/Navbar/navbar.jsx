@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import intuteLogo from "../../assets/intuteLogo.png";
 import "./navbar.css";
 
 const Navbar = () => {
@@ -23,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar navbar-expand-lg sticky-top ${navbarClass}`}>
       <div className="container">
-        <img src="/assets/intuteLogo.png" alt="" />
+      <img src={intuteLogo} alt="Intute.ai Logo" className="navbar-logo" />
         {/* <Link className="navbar-brand" to="/">Intute.ai</Link> */}
         <button 
           className="navbar-toggler" 

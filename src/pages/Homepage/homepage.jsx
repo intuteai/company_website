@@ -15,7 +15,7 @@ const Home = () => {
         <Typewriter
           words={["Welcome to Intute.ai", "Empowering AI Innovations", "Shaping a Sustainable Future"]}
           loop={true}
-          cursor
+          cursor={true}
           cursorStyle="|"
           typeSpeed={90}
           deleteSpeed={30}

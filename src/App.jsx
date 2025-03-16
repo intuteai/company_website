@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar/navbar";
 import Home from "./pages/Homepage/homepage";
 import About from "./pages/Aboutpage/aboutpage";
 import Contact from "./pages/Contactpage/contactPage";
+import Vision from "./pages/Visionpage/visionpage";
+import Footer from "./components/Footer/footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -14,7 +16,9 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/vision" element={<Vision />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
