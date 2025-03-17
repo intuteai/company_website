@@ -83,7 +83,7 @@ const About = () => {
         transition={{ duration: 1.2 }}
       >
         <div className="strength-image" style={{ backgroundImage: `url(${mechanicalImg})` }}>
-          <h3>Mechanical</h3>
+          <h3>Computational Design</h3>
         </div>
         <div className="strength-text">
           <ul>

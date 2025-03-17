@@ -10,6 +10,10 @@ import rahulImage from "../../assets/images/Rahul.jpeg";
 import rishikaImage from "../../assets/images/Rishika.jpeg";
 import saatwikImage from "../../assets/images/Saatwik.jpeg";
 import yashImage from "../../assets/images/Yash.jpeg";
+import maadhavImage from "../../assets/images/Maadhav.jpeg";
+import kushImage from "../../assets/images/Kush.jpg";
+import mrinalImage from "../../assets/images/Mrinal.jpg";
+import akshayImage from "../../assets/images/Akshay.jpg";
 
 const teamMembers = [
   {
@@ -17,7 +21,7 @@ const teamMembers = [
     role: "Founder",
     description:
       "17+ years entrepreneurial career in Automation systems, Electric vehicle traction control & system integration.",
-    image: "", // No image yet
+    image: akshayImage, 
   },
   {
     name: "Saatwik",
@@ -35,13 +39,13 @@ const teamMembers = [
     name: "Maadhav",
     role: "Embedded Design",
     description: "Electronics Hardware Design.",
-    image: "",
+    image: maadhavImage,
   },
   {
     name: "Mrinal",
     role: "Strategy",
     description: "Thermal Analysis.",
-    image: "",
+    image: mrinalImage,
   },
   {
     name: "Mudit",
@@ -77,7 +81,7 @@ const teamMembers = [
     name: "Kush",
     role: "MATLAB",
     description: "",
-    image: "",
+    image: kushImage,
   },
   {
     name: "Mayank",

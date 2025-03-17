@@ -1,4 +1,4 @@
-.vision-container {
+.solution-container {
     text-align: center;
     padding: 0;
     background: linear-gradient(135deg, #121212, #1a1a1a);
@@ -7,8 +7,8 @@
     padding-bottom: 60px;
   }
   
-  /* Vision Hero Section */
-  .vision-hero {
+  /* Solution Hero Section */
+  .solution-hero {
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
     text-align: center;
   }
   
-  .vision-title {
+  .solution-title {
     font-size: 3rem;
     font-weight: bold;
     background: linear-gradient(to right, #f3ec78, #af4261);
@@ -26,7 +26,7 @@
     -webkit-text-fill-color: transparent;
   }
   
-  .vision-subtitle {
+  .solution-subtitle {
     font-size: 1.2rem;
     max-width: 800px;
     line-height: 1.6;
@@ -35,13 +35,13 @@
     opacity: 0.9;
   }
   
-  /* Vision Sections */
-  .vision-sections {
+  /* solution Sections */
+  .solution-sections {
     width: 100%;
   }
   
-  /* Vision Section (Full-width) */
-  .vision-section {
+  /* solution Section (Full-width) */
+  .solution-section {
     position: relative;
     width: 100%;
     height: 60vh;
@@ -54,7 +54,7 @@
     text-align: center;
   }
   
-  .vision-overlay {
+  .solution-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -64,7 +64,7 @@
   }
   
   /* Vision Content */
-  .vision-content {
+  .solution-content {
     position: relative;
     max-width: 800px;
     padding: 20px;
@@ -74,17 +74,17 @@
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
   }
   
-  .vision-content h2 {
+  .solution-content h2 {
     font-size: 2rem;
     margin-bottom: 10px;
     color: #f3ec78;
   }
   
-  .vision-details {
+  .solution-details {
     margin-top: 15px;
   }
   
-  .vision-details p {
+  .solution-details p {
     font-size: 1rem;
     margin: 5px 0;
     color: #ddd;

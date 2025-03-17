@@ -1,24 +1,24 @@
-import "./visionpage.css";
+import "./solutionpage.css";
 import { motion } from "framer-motion";
 import evImage from "../../assets/electronics.jpg";
 import iotImage from "../../assets/software.jpg";
 import aiImage from "../../assets/mechanical.jpg";
 
-const Vision = () => {
+const Solution = () => {
   return (
-    <div className="vision-container">
-      {/* Vision Hero Section */}
-      <section className="vision-hero">
+    <div className="solution-container">
+      {/* solution Hero Section */}
+      <section className="solution-hero">
         <motion.h1
-          className="vision-title"
+          className="solution-title"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Our Vision & Applications
+          Our Solutions & Applications
         </motion.h1>
         <motion.p
-          className="vision-subtitle"
+          className="solution-subtitle"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2 }}
@@ -27,24 +27,24 @@ const Vision = () => {
         </motion.p>
       </section>
 
-      {/* Vision Sections */}
-      <div className="vision-sections">
+      {/* Solution Sections */}
+      <div className="solution-sections">
         
         {/* EV Drive-train Solutions */}
         <motion.section 
-          className="vision-section"
+          className="solution-section"
           style={{ backgroundImage: `url(${evImage})` }}
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2 }}
         >
-          <div className="vision-overlay"></div>
-          <div className="vision-content">
+          <div className="solution-overlay"></div>
+          <div className="solution-content">
             <h2>EV Drive-train & Powertrains</h2>
             <p>Optimizing <strong>energy efficiency, battery longevity, and performance</strong> for the next generation of electric vehicles.</p>
-            <div className="vision-details">
+            <div className="solution-details">
               <p>Advanced Motor Control</p>
-              <p>Battery Management Systems</p>
+              <p>Reinforcement Learning</p>
               <p>Regenerative Braking</p>
               <p>Thermal Management</p>
             </div>
@@ -53,17 +53,17 @@ const Vision = () => {
 
         {/* Connected Vehicles & IoT */}
         <motion.section 
-          className="vision-section"
+          className="solution-section"
           style={{ backgroundImage: `url(${iotImage})` }}
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2 }}
         >
-          <div className="vision-overlay"></div>
-          <div className="vision-content">
+          <div className="solution-overlay"></div>
+          <div className="solution-content">
             <h2>Connected Vehicles & IoT</h2>
             <p>Enabling <strong>seamless connectivity</strong> between vehicles, infrastructure, and cloud ecosystems.</p>
-            <div className="vision-details">
+            <div className="solution-details">
               <p>Telematics & Smart Diagnostics</p>
               <p>Vehicle-to-Everything (V2X) Communication</p>
               <p>Edge & Cloud Computing</p>
@@ -74,17 +74,17 @@ const Vision = () => {
 
         {/* AI/ML-Based Road Safety */}
         <motion.section 
-          className="vision-section"
+          className="solution-section"
           style={{ backgroundImage: `url(${aiImage})` }}
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2 }}
         >
-          <div className="vision-overlay"></div>
-          <div className="vision-content">
+          <div className="solution-overlay"></div>
+          <div className="solution-content">
             <h2>AI/ML-Based Road Safety</h2>
             <p>Integrating <strong>Artificial Intelligence and Machine Learning</strong> to enhance road safety and driver monitoring.</p>
-            <div className="vision-details">
+            <div className="solution-details">
               <p>Driver Monitoring System</p>
               <p>Autonomous Emergency Braking</p>
               <p>Traffic Flow Optimization</p>
@@ -106,7 +106,7 @@ const Vision = () => {
         </div>
         <div className="vertical-line"></div>
         <div className="why-right">
-          <div className="vision-details">
+          <div className="solution-details">
             <p>End-to-End Solutions – From hardware to software integration.</p>
             <p>Data-Driven Approach – AI-powered analytics for efficiency.</p>
             <p>Sustainable Innovation – Prioritizing green energy adoption.</p>
@@ -117,4 +117,4 @@ const Vision = () => {
   );
 };
 
-export default Vision;
+export default Solution;
