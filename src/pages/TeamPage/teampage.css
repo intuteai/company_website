@@ -1,0 +1,118 @@
+.team-container {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #121212, #1a1a1a);
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .team-header-content {
+    text-align: left;
+    flex: 2;
+  }
+  
+  .team-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #00c4cc;
+    margin-bottom: 20px;
+  }
+  
+  .team-tagline {
+    font-size: 1.2rem;
+    max-width: 600px; /* Adjusted to match presentation */
+    color: #ddd;
+    opacity: 0.9;
+  }
+  
+  .team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto 0;
+  }
+  
+  .team-card {
+    background: #1e2a3c;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 196, 204, 0.2);
+  }
+  
+  .founder-card {
+    background: #2a3b52;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+  }
+  
+  .founder-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 196, 204, 0.3);
+  }
+  
+  .team-image-placeholder {
+    width: 120px;
+    height: 120px;
+    background: #3a4b63;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    background-image: linear-gradient(45deg, #00c4cc, #1e2a3c);
+  }
+  
+  .team-role {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00c4cc;
+    margin-bottom: 5px;
+  }
+  
+  .team-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+    background: #2a3b52;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .team-description,
+  .founder-description {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 5px;
+  }
+  
+  .founder-description {
+    font-style: italic;
+  }
+
+  .team-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    object-fit: cover; /* Ensures the image fits well in the circular frame */
+  }

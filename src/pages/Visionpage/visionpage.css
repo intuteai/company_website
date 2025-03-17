@@ -4,6 +4,7 @@
     background: linear-gradient(135deg, #121212, #1a1a1a);
     color: white;
     min-height: 100vh;
+    padding-bottom: 60px;
   }
   
   /* Vision Hero Section */
@@ -91,8 +92,48 @@
   
   /* Why Choose Us */
   .why-choose-us {
-    padding: 40px 20px;
-    text-align: center;
+    color: #f3ec78;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 60px 60px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 50px auto 0; /* Fix: Removed bottom margin */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    overflow: hidden; /* Fix: Prevents extra spacing */
+  }
+  
+  /* Remove bottom padding if present */
+  .why-choose-us p {
+    margin-bottom: 0; /* Fix: Ensures no extra bottom space */
+    padding-bottom: 0; /* Fix: Ensures no extra bottom padding */
+  }
+  
+  /* Left Side (Title) */
+  .why-left {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .why-left h3 {
+    font-size: 2rem;
+    color: #f3ec78;
+    margin-bottom: 10px;
+  }
+  
+  /* Right Side (Content) */
+  .why-right {
+    flex: 2;
+    text-align: left;
+    padding-left: 30px;
+  }
+  
+  .why-right .vision-details p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin: 10px 0;
   }
   
   @media (max-width: 768px) {

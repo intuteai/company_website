@@ -5,6 +5,7 @@ import About from "./pages/Aboutpage/aboutpage";
 import Contact from "./pages/Contactpage/contactPage";
 import Vision from "./pages/Visionpage/visionpage";
 import Footer from "./components/Footer/footer";
+import Teampage from "./pages/TeamPage/teamPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/vision" element={<Vision />} />
+        <Route path="/team" element={<Teampage />} />
       </Routes>
       <Footer />
     </Router>

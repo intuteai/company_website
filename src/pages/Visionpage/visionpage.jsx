@@ -101,13 +101,17 @@ const Vision = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
       >
-        <h3>Why Choose Us?</h3>
-        <div className="vision-details">
-          <p>End-to-End Solutions – From hardware to software integration.</p>
-          <p>Data-Driven Approach – AI-powered analytics for efficiency.</p>
-          <p>Sustainable Innovation – Prioritizing green energy adoption.</p>
+        <div className="why-left">
+          <h2>Why Choose Us?</h2>
         </div>
-        <p>Join us as we shape the future of <strong>smarter, safer, and more connected mobility solutions.</strong></p>
+        <div className="vertical-line"></div>
+        <div className="why-right">
+          <div className="vision-details">
+            <p>End-to-End Solutions – From hardware to software integration.</p>
+            <p>Data-Driven Approach – AI-powered analytics for efficiency.</p>
+            <p>Sustainable Innovation – Prioritizing green energy adoption.</p>
+          </div>
+        </div>
       </motion.div>
     </div>
   );
