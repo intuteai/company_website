@@ -17,6 +17,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
+  margin-top: 80px;
 }
 
 .home-text {
@@ -29,7 +30,7 @@
   opacity: 0.9;
 }
 
-.connect-btn {
+/* .connect-btn {
   margin-top: 30px;
   padding: 12px 30px;
   font-size: 1.2rem;
@@ -46,7 +47,7 @@
   background: linear-gradient(90deg, #ff8e53, #ff6b6b);
   box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
   transform: scale(1.05);
-}
+} */
 
 .dpiit-text h5 {
   color: #f3ec78;
@@ -54,9 +55,8 @@
 
 /* Vision Section */
 .vision-section {
-  margin-top: 50px;
-  width: 80%; /* Increased width */
-  max-width: 900px;
+  margin-top: 250px;
+  max-width: 1400px;
   text-align: center;
   padding: 40px 20px;
   background: rgba(255, 255, 255, 0.1);
@@ -72,7 +72,7 @@
 }
 
 .vision-title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   background: linear-gradient(to right, #f3ec78, #af4261);
   -webkit-background-clip: text;
@@ -81,7 +81,7 @@
 }
 
 .vision-separator {
-  height: 230px;
+  height: 250px;
   background: grey;
   flex: 0.01;
 }

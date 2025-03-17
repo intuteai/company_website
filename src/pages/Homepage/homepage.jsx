@@ -63,12 +63,9 @@ const Home = () => {
           <h3 className="vision-title">Our Vision</h3>
           <div className="vision-separator"></div>
           <p className="vision-text">
-            Deployment of advanced technologies like <strong>Model-Based Design</strong> & 
-            high-efficiency <strong>AI algorithms</strong> to enhance the user experience of commonly used 
-            control systems & human interfaces in <strong>transportation, manufacturing, medical, 
-            aerospace, defense, and e-commerce</strong>. <br /><br />
-            Mass-scale implementation at <strong>low cost</strong> shall effectively help reach the 
-            <strong>sustainability goal</strong> faster.
+          We are dedicated to the strategic deployment of cutting-edge technologies, integrating Model-Based Design (MBD) and high-efficiency AI algorithms to redefine user experiences in complex control systems and human-machine interfaces.<br></br> Our approach enhances precision, efficiency, and adaptability across critical industries, including transportation, manufacturing, healthcare, aerospace, defense, and e-commerce.
+          By leveraging intelligent automation, predictive analytics, and real-time optimization, we aim to revolutionize system performance, ensuring seamless operation, enhanced safety, and reduced energy consumption.<br></br>
+          Our focus on cost-effective, mass-scale implementation accelerates technological adoption, enabling widespread accessibility without compromising quality. This approach plays a pivotal role in advancing sustainability goals, fostering an ecosystem of smart, resilient, and future-ready solutions.
           </p>
         </div>
       </motion.div>
