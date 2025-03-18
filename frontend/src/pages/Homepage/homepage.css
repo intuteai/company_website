@@ -1,0 +1,113 @@
+.home-container {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #121212, #1a1a1a);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #f3ec78, #af4261);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+
+.home-text {
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.6;
+  text-align: center;
+  color: #ddd;
+  padding: 0 15px;
+  opacity: 0.9;
+}
+
+/* .connect-btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, #ff6b6b, #ff8e53);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.connect-btn:hover {
+  background: linear-gradient(90deg, #ff8e53, #ff6b6b);
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+  transform: scale(1.05);
+} */
+
+.dpiit-text h5 {
+  color: #f3ec78;
+}
+
+/* Vision Section */
+.vision-section {
+  margin-top: 250px;
+  max-width: 1400px;
+  text-align: center;
+  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.1);
+}
+
+.vision-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.vision-title {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #f3ec78, #af4261);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex: 1;
+}
+
+.vision-separator {
+  height: 250px;
+  background: grey;
+  flex: 0.01;
+}
+
+.vision-text {
+  font-size: 1.1rem;
+  color: #ddd;
+  line-height: 1.6;
+  flex: 2;
+  text-align: left;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .vision-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vision-separator {
+    height: 2px;
+    width: 50%;
+    margin: 15px 0;
+  }
+
+  .vision-text {
+    text-align: center;
+  }
+}
