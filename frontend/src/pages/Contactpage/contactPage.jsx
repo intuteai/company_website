@@ -74,10 +74,10 @@ const ContactUs = () => {
       <div className="container mt-4">
         <div className="row justify-content-center">
           <div className="col-md-6 text-center">
-            <motion.div className="contact-item" whileHover={{ scale: 1.1 }}>
+            {/* <motion.div className="contact-item" whileHover={{ scale: 1.1 }}>
               <FaPhone size={30} color="#ff6b6b" />
               <p className="contact-text">+91-9899221959</p>
-            </motion.div>
+            </motion.div> */}
             
             <motion.div className="contact-item" whileHover={{ scale: 1.1 }}>
               <a href="mailto:info@intute.in" className="contact-link">

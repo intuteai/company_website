@@ -41,7 +41,7 @@ const Footer = () => {
 
       <div className="footer-copyright">
       <p className="footer-contact">
-      811, A5, Sector-68, NOIDA, UP-201303 | 📧 info@intute.ai | 📞 +91-9899221959
+      811, A5, Sector-68, NOIDA, UP-201303 | 📧 info@intute.ai
         </p>
         © {new Date().getFullYear()} Intute.ai. All rights reserved.
       </div>

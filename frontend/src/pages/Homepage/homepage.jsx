@@ -40,7 +40,7 @@ const Home = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.2 }}
       >
-        <h5>A DPIIT REGISTERED STARTUP</h5>
+        <strong>A DPIIT REGISTERED STARTUP</strong>
       </motion.p>
 
       {/* Button with Hover Effect */}
