@@ -5,7 +5,7 @@ import About from "./pages/Aboutpage/aboutpage";
 import Contact from "./pages/Contactpage/contactPage";
 import Solution from "./pages/Solutionpage/solutionpage";
 import Footer from "./components/Footer/footer";
-import Teampage from "./pages/TeamPage/teamPage";
+import Teampage from "./pages/TeamPage/teampage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
