@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import bannerImage from "../../assets/images/car.jpg";
+import bannerImage from "../../assets/images/Car.jpg";
 import img1 from "../../assets/images/assist.jpg";
 import img2 from "../../assets/images/street.jpg";
 import img3 from "../../assets/images/infrastructure.jpeg";
