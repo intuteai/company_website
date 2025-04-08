@@ -21,7 +21,7 @@ const ContactUs = () => {
     setStatusMessage("Sending...");
 
     try {
-      await axios.post("http://localhost:5000/api/contact", formData, {
+      await axios.post("/api/contact", formData, {
         headers: { "Content-Type": "application/json" },
       });
       setStatusMessage("Message sent successfully!");
