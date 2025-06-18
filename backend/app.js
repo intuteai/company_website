@@ -9,13 +9,16 @@ connectDB();
 
 const app = express();
 
-// Routes
-app.use("/api/contact", contactRoutes);
-
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: "http://localhost:5173", 
+    methods: ["GET", "POST", "OPTIONS"], 
+    allowedHeaders: ["Content-Type"], 
+}));
 
+// Routes
+app.use("/api/contact", contactRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
