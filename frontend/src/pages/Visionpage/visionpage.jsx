@@ -15,35 +15,30 @@ const aimPoints = [
       "Empower drivers with real-time alerts, AI-based recommendations, and predictive assistance. From obstacle detection to adaptive cruise systems, we turn reactive driving into proactive mobility.",
     video: video1,
   },
-
   {
     title: "Connected Infrastructure",
     content:
       "Integrate AI into infrastructure, creating intelligent intersections, responsive lighting, and smart signage. This builds a collaborative, safe ecosystem for both urban and rural mobility networks.",
     video: video3,
   },
-
   {
     title: "Sustainable Energy Integration",
     content:
       "Utilize AI to optimize energy consumption across electric mobility platforms. From predictive charging to green routing, ensure every trip is both efficient and eco-friendly.",
     video: video4,
   },
-  
   {
     title: "Smarter Streets for All",
     content:
       "Make streets safer for everyone—drivers, pedestrians, and cyclists—through connected monitoring, AI-driven analytics, and responsive alert systems that reduce accidents and improve traffic flow.",
     video: video2,
   },
-
-
-
 ];
 
 const VisionPage = () => {
   return (
     <div className="page-container">
+      {/* === HERO BANNER === */}
       <div
         className="vision-banner"
         style={{ backgroundImage: `url(${bannerImage})` }}
@@ -70,17 +65,17 @@ const VisionPage = () => {
         </div>
       </div>
 
+      {/* === CARDS SECTION === */}
       <section className="vision-carousel-section">
         <h3 className="vision-heading">
-          Driving the Future of <b>"Safer"</b> and <br />
-          <b>"Smarter"</b> Mobility
+          Driving the Future of <b>“Safer”</b> and <b>“Smarter”</b> Mobility
         </h3>
+
         <p className="vision-subtext">
           At Intute.ai, we harness the power of AI and data-driven technologies
-          to reimagine transportation.
-          <br />
-          From intelligent infrastructure to sustainable mobility, we aim to
-          make every journey safer, smarter, and more connected.
+          to reimagine transportation. From intelligent infrastructure to
+          sustainable mobility, we aim to make every journey safer, smarter,
+          and more connected.
         </p>
 
         <div className="vision-cards-container">
@@ -94,6 +89,7 @@ const VisionPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
+              tabIndex="0"
             >
               <div className="card-image-wrapper">
                 <video
@@ -103,10 +99,12 @@ const VisionPage = () => {
                   muted
                   loop
                   playsInline
+                  loading="lazy"
+                  aria-label={`Preview video for ${item.title}`}
                 />
               </div>
               <div className="card-text-wrapper">
-                <h4 className="carousel-title">{item.title}</h4>
+                <h3 className="carousel-title">{item.title}</h3>
                 <p className="carousel-content">{item.content}</p>
               </div>
             </motion.div>

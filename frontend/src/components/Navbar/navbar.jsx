@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import intuteLogo from "../../assets/intuteLogo.png";
+import { HiOutlineMenuAlt1 } from "react-icons/hi"; // ✅ Import new icon
 import "./navbar.css";
 
 const Navbar = () => {
@@ -15,7 +16,6 @@ const Navbar = () => {
         setNavbarClass("navbar-transparent");
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -30,8 +30,9 @@ const Navbar = () => {
           <img src={intuteLogo} alt="Intute.ai Logo" className="navbar-logo" />
         </NavLink>
 
-        <button className="navbar-toggler" type="button" onClick={toggleNavbar}>
-          <span className="navbar-toggler-icon"></span>
+        {/* ✅ Custom Icon Button */}
+        <button className="custom-toggler" onClick={toggleNavbar} aria-label="Toggle navigation">
+          <HiOutlineMenuAlt1 size={34} color="#ffffff" />
         </button>
 
         <div className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`} id="navbarNav">
@@ -41,7 +42,7 @@ const Navbar = () => {
               { to: "/about", label: "About Us" },
               { to: "/vision", label: "Our Vision" },
               { to: "/team", label: "Our Team" },
-              { to: "/api/contact", label: "Contact" }
+              { to: "/api/contact", label: "Contact" },
             ].map(({ to, label }) => (
               <li className="nav-item me-5" key={to}>
                 <NavLink

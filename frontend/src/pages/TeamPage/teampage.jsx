@@ -35,43 +35,39 @@ const teamMembers = [
   },
   {
     name: "Mayank",
-    role: "Embedded Engineer",
-    description: "Embedded UI Developer",
+    role: "Frontend Developer",
+    description: "Embedded Software Developer",
     image: mayankImage,
     linkedin: "#",
   },
   {
     name: "Pratham",
     role: "Application Developer",
-    description: "",
+    description: "React-Native Engineer",
     image: prathamImage,
     linkedin: "#",
   },
-
   {
     name: "Rishika",
     role: "System Architect",
-    description: "Front-end Developer, UI/UX Designer",
+    description: "Front-end Developer",
     image: rishikaImage,
     linkedin: "https://www.linkedin.com/in/rishika",
   },
-
   {
     name: "Rahul",
     role: "Backend Developer",
-    description: "",
+    description: "Server-Side Engineer",
     image: rahulImage,
     linkedin: "#",
   },
-
   {
     name: "Kanishk",
-    role: "Data Analyst",
-    description: "",
+    role: "AI/ML & CV Developer",
+    description: "Intelligent Systems using CV & ML",
     image: kanishkImage,
     linkedin: "#",
   },
-
   {
     name: "Maadhav",
     role: "Hardware Designer",
@@ -79,19 +75,17 @@ const teamMembers = [
     image: maadhavImage,
     linkedin: "#",
   },
-
   {
     name: "Aryan",
     role: "Data Engineer",
-    description: "",
+    description: "AI Solutions with ML",
     image: aryanImage,
     linkedin: "#",
   },
-
   {
     name: "Kush",
     role: "Design Engineer",
-    description: "",
+    description: "Design Technologist",
     image: kushImage,
     linkedin: "#",
   },
@@ -108,8 +102,10 @@ const renderCard = (member) => (
       <img
         src={member.image}
         alt={member.name}
-        className="team-image-rect"
         loading="lazy"
+        className={`team-image-rect ${
+          member.name === "Akshay Aggarwal" ? "akshay-image" : ""
+        }`}
       />
     ) : (
       <div className="team-image-placeholder"></div>
@@ -120,7 +116,7 @@ const renderCard = (member) => (
       <p className="team-description">{member.description}</p>
     )}
 
-    {member.role === "Founder" && member.linkedin && (
+    {member.name === "Akshay Aggarwal" && member.linkedin && (
       <a
         href={member.linkedin}
         className="linkedin-icon"

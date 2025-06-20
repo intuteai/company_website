@@ -11,18 +11,18 @@
 /* === SECTION === */
 .demo-feature-section {
   background: var(--bg-gradient);
-  padding: 80px 40px;
+  padding: 80px 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
 
+/* === TAGLINE === */
 .demo-feature-tagline {
   text-align: center;
   color: var(--text-color);
   max-width: 800px;
-  margin: auto;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
 }
 
 .demo-feature-tagline h2 {
@@ -45,8 +45,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
-  padding: 0 20px;
   justify-items: center;
+  width: 100%;
 }
 
 /* === CARD === */
@@ -82,16 +82,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center top;
 }
 
 .demo-feature-image-container img.no-crop {
   object-fit: contain;
-  object-position: center;
   background: #000;
 }
 
-/* === CARD TITLE (NO DARK GRADIENT) === */
+/* === CARD TITLE === */
 .demo-feature-card-title {
   position: absolute;
   bottom: 20px;
@@ -101,10 +100,8 @@
   color: #fff;
   font-size: 1.5rem;
   font-weight: 800;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8), 0 4px 10px rgba(0, 0, 0, 0.4);
-  line-height: 1.3;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
 }
-
 
 /* === CARD CONTENT === */
 .demo-feature-card-content {
@@ -123,7 +120,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   max-height: 4.8em;
-  transition: max-height 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .demo-card-description.expanded {
@@ -312,48 +309,45 @@
   }
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
+/* === RESPONSIVE FIXES === */
+@media (max-width: 480px) {
   .demo-feature-tagline h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .demo-feature-tagline p {
-    font-size: 1rem;
-  }
-
-  .demo-feature-card {
-    min-height: 460px;
-  }
-
-  .demo-feature-image-container {
-    height: 200px;
+    font-size: 0.95rem;
   }
 
   .demo-feature-card-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .demo-card-description {
+    font-size: 0.95rem;
   }
 
   .demo-feature-card-content {
     padding: 16px;
   }
 
-  .demo-phone-frame {
-    max-width: 90vw;
+  .demo-close-button {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
   }
 
-  .demo-highlight-wrapper {
-    flex-direction: column;
-    text-align: center;
+  .demo-phone-frame {
+    border-width: 10px;
+    padding: 10px 8px;
+    border-radius: 30px;
+  }
+
+  .demo-highlight-heading {
+    font-size: 1.6rem;
   }
 
   .demo-highlight-text {
     font-size: 1rem;
   }
-
-  .demo-highlight-button {
-    margin: 20px auto 0;
-  }
 }
-
-
